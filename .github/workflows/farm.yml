@@ -1,0 +1,51 @@
+name: Atualizar fazendinha
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 */6 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/**'
+      - 'tests/**'
+      - 'config.json'
+      - '.github/workflows/farm.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: commit-farm
+  cancel-in-progress: false
+
+jobs:
+  grow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Verificar calendário e integração
+        run: python -m unittest discover -s tests -v
+      - name: Cultivar contribuições
+        env:
+          GH_TOKEN: ${{ secrets.GH_READ_TOKEN || github.token }}
+          FARM_USERNAME: ${{ vars.FARM_USERNAME || github.repository_owner }}
+        run: python scripts/generate.py
+      - name: Salvar SVG atualizado
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/farm.svg
+          if git diff --cached --quiet; then
+            echo 'A fazendinha já está atualizada.'
+            exit 0
+          fi
+          git commit -m 'chore: atualizar fazendinha'
+          git pull --rebase
+          git push
