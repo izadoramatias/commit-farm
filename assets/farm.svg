@@ -889,17 +889,6 @@
 <text x="79" y="347" font-size="10" fill="#647552" >Q</text>
 <text x="79" y="367" font-size="10" fill="#647552" >S</text>
 <text x="79" y="387" font-size="10" fill="#647552" >S</text>
-<g class="day" data-date="2025-10-08" data-count="0" data-level="0"><title>08/10/2025 · 0 contribuições</title>
-<g transform="translate(108 314) scale(1)">
-<rect x="0" y="0" width="18" height="18" fill="#805c40"/>
-<rect x="1" y="1" width="16" height="15" fill="#a4774f"/>
-<rect x="2" y="4" width="14" height="1" fill="#8d633f"/>
-<rect x="2" y="9" width="14" height="1" fill="#8d633f"/>
-<rect x="2" y="14" width="14" height="1" fill="#8d633f"/>
-<rect x="4" y="3" width="2" height="1" fill="#c29a67"/>
-<rect x="13" y="11" width="2" height="1" fill="#c29a67"/>
-</g>
-</g>
 <g class="day" data-date="2025-10-09" data-count="0" data-level="0"><title>09/10/2025 · 0 contribuições</title>
 <g transform="translate(108 334) scale(1)">
 <rect x="0" y="0" width="18" height="18" fill="#805c40"/>
@@ -4991,7 +4980,18 @@
 <rect x="11" y="15" width="4" height="3" fill="#e39b43"/>
 <rect x="12" y="18" width="2" height="1" fill="#d67932"/>
 </g>
-<rect x="1147" y="313" width="20" height="20" fill="none" stroke="#fff5cf" stroke-width="2"/>
+</g>
+<g class="day" data-date="2026-10-08" data-count="0" data-level="0"><title>08/10/2026 · 0 contribuições</title>
+<g transform="translate(1148 334) scale(1)">
+<rect x="0" y="0" width="18" height="18" fill="#805c40"/>
+<rect x="1" y="1" width="16" height="15" fill="#a4774f"/>
+<rect x="2" y="4" width="14" height="1" fill="#8d633f"/>
+<rect x="2" y="9" width="14" height="1" fill="#8d633f"/>
+<rect x="2" y="14" width="14" height="1" fill="#8d633f"/>
+<rect x="4" y="3" width="2" height="1" fill="#c29a67"/>
+<rect x="13" y="11" width="2" height="1" fill="#c29a67"/>
+</g>
+<rect x="1147" y="333" width="20" height="20" fill="none" stroke="#fff5cf" stroke-width="2"/>
 </g>
 <rect x="121" y="448" width="3" height="12" fill="#70934b"/>
 <rect x="118" y="448" width="9" height="5" fill="#e8b998"/>
@@ -5142,5 +5142,5 @@
 </g>
 <text x="220" y="515" font-size="11" fill="#73816a" >colheita</text>
 <text x="430" y="515" font-size="11" fill="#73816a" >1 canteiro = 1 dia  ·  borda clara = hoje</text>
-<text x="1067" y="515" font-size="11" fill="#73816a" >07/10/2026 · UTC</text>
+<text x="1067" y="515" font-size="11" fill="#73816a" >08/10/2026 · UTC</text>
 </svg>
